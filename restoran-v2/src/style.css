@@ -1,0 +1,172 @@
+/* Basic Styling */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size for better button text fitting */
+  width: 100%; /* Make buttons take up full width of their container */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.bg-green-500 {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.bg-green-700 {
+  background-color: #3e8e41; /* Darker Green */
+  color: white;
+}
+
+.bg-red-500 {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.bg-red-700 {
+  background-color: #d32f2f; /* Darker Red */
+  color: white;
+}
+
+.bg-blue-500 {
+  background-color: #2196F3; /* Blue */
+  color: white;
+}
+
+.bg-blue-700 {
+  background-color: #1976D2; /* Darker Blue */
+  color: white;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Add margin to create space between search input and buttons */
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2; /* Light Gray */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light Gray */
+}
+
+/* Input Fields */
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Small Text */
+.text-xs {
+  font-size: 12px;
+}
+
+/* Gray Text */
+.text-gray-500 {
+  color: #777;
+}
+
+/* Other Elements */
+.flex {
+  display: flex;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+/* Responsive Design using Media Queries */
+@media (max-width: 768px) { /* For tablets and smaller */
+  .container {
+    padding: 10px;
+  }
+
+  table th, table td {
+    padding: 5px;
+  }
+
+  input[type="text"], input[type="number"] {
+    font-size: 14px;
+  }
+
+  .flex {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .search-input {
+    width: 100%; /* Search input takes full width on tablet */
+  }
+}
+
+@media (max-width: 480px) { /* For phones and smaller */
+  table th, table td {
+    padding: 3px;
+  }
+
+  input[type="text"], input[type="number"] {
+    font-size: 12px;
+  }
+
+  .search-input {
+    width: 100%; /* Search input takes full width on phone */
+  }
+
+  .flex {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements in column */
+  }
+  
+  .search-input {
+    margin-bottom: 10px; /* Add margin to create space between search input and buttons */
+  }
+}
